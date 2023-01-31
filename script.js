@@ -12,6 +12,7 @@ const onHoldListEl = document.getElementById('on-hold-list');
 // Items
 let updatedOnLoad = false;
 
+
 // Initialize Arrays
 let backlogListArray = [];
 let progressListArray = [];
@@ -184,12 +185,15 @@ function allowDrop(e) {
 function drop(e) {
   e.preventDefault();
   const parent = listColumns[currentColumn];
+  
   // Remove Background Color/Padding
   listColumns.forEach((column) => {
     column.classList.remove('over');
   });
+  
   // Add item to Column
   parent.appendChild(draggedItem);
+  
   // Dragging complete
   dragging = false;
   rebuildArrays();
