@@ -47,6 +47,10 @@ function updateSavedColumns() {
     localStorage.setItem(`${arrayName}Items`, JSON.stringify(listArrays[index]));
   });
   //localStorage.setItem('backlogItems', JSON.stringify(backlogListArray));...this also loops through the localstorage data but its repetitive...avoid it
+  // localStorage.setItem('backlogItems', JSON.stringify(backlogListArray));
+  // localStorage.setItem('progressItems', JSON.stringify(progressListArray));
+  // localStorage.setItem('completeItems', JSON.stringify(completeListArray));
+  // localStorage.setItem('onHoldItems', JSON.stringify(onHoldListArray));
 }
 
 // Filter Array to remove empty values
