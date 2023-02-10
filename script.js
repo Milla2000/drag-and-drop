@@ -166,6 +166,17 @@ function rebuildArrays() {
   for (let i = 0; i < onHoldListEl.children.length; i++) {
     onHoldListArray.push(onHoldListEl.children[i].textContent);
   }
+  
+    //everytime you declare an empty array and push item into that array you can use "map()"-the map function will push that item 'textcontent item'-just like a for loop above that populates an array but now using map()
+ //array.from converts the object like item into an array item backlogListEl is an html collection. you can only map over something that is an array
+ //you can also replace mapnction with foreach function
+  
+   //backlogListArray = Array.from(backlogListEl.children).map(i => i.textContent);//you can also chai other thing now such as filter()
+
+  // progressListArray= Array.from(progressListEl.children).map(i => i.textContent);
+  // completeListArray  = Array.from(completeListEl.children).map(i => i.textContent);
+  // onHoldListArray= Array.from(onHoldListEl.children) .map(i => i.textContent);
+  
   updateDOM();
 }
 
